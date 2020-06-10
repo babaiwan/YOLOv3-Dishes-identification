@@ -4,7 +4,7 @@
 
 
 
-![image]( https://github.com/babaiwan/YOLOv3-Dishes-identification/blob/master/Demo.gif)
+![image]( Demo.gif)
 
 
 
