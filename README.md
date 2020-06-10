@@ -4,7 +4,7 @@
 
 
 
-![image]( Demo.gif)
+![demo](https://s1.ax1x.com/2020/06/10/to6NV0.gif)
 
 
 
@@ -33,7 +33,7 @@ A Keras implementation of YOLOv3 (Tensorflow backend) inspired by [allanzelener/
 
 1. Download YOLOv3 weights from [YOLO website](http://pjreddie.com/darknet/yolo/).
 2. Convert the Darknet YOLO model to a Keras model.
-3. Run YOLO detection.
+3. Run YOLO detection
 
 ```
 wget https://pjreddie.com/media/files/yolov3.weights
