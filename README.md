@@ -10,7 +10,9 @@
 花卷，烧鸡，煎蛋，鱼，粽子
 
 
+运行MainWindow2.0即可
 
+开箱即用
 ```
 
 ![demo](https://s1.ax1x.com/2020/06/10/to6NV0.gif)
