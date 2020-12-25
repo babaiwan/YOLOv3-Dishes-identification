@@ -12,7 +12,7 @@ import time
 import cv2
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
-from PIL.ImageQt import ImageQt
+from PIL import ImageQt
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import pyqtSignal, QDateTime
 from PyQt5.QtGui import QImage, QPixmap
@@ -25,7 +25,7 @@ def cv2ImgAddText(img, text, left, top):  # 视频帧中绘制中文
     img = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
     draw = ImageDraw.Draw(img)      #通过打开一个Img，生成一个draw对象。
     fillColor = (255, 0, 0)         #设置图片颜色
-    fontStyle = ImageFont.truetype("font/simsun.ttc", 20, encoding='utf-8')     #其中字体需要自行去下载，本文将字体放在font目录下
+    fontStyle = ImageFont.truetype("font/simsun.ttc", 20, encoding='utf-8')     #其中字体需要自行去下载，将字体放在font目录下
     draw.text((left, top - 20), text, font=fontStyle, fill=fillColor)
     return cv2.cvtColor(np.asarray(img), cv2.COLOR_RGB2BGR)   #这个函数在视频帧中处理，不断调用
 
@@ -351,7 +351,7 @@ class Ui_MainWindow(object):
 
     def updatePictureUI(self, img):  # 更新主界面UI  图像      接受QImage格式
         self.PhotoLabel.setPixmap(QPixmap.fromImage(img))  # 图像更新到UI上
-        self.PhotoLabel.setScaledContents(True)         #设置图像大小自适应
+        self.PhotoLabel.setScaledContents(True)            # 设置图像大小自适应
 #控件截图函数
     def cutscreen(self):
         print("截图Qlabel")
